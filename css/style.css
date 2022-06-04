@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__corazon {
+    width: 50%;
+    height: auto;
+    margin: 25% auto;
+}
+
+.main__img {
+    max-width: 100%;
+    height: auto;
+    /* animation: <animation-name> <animation-duration> <animation-iteration-count> */
+    animation: animateHeart 1.2s infinite;
+}
+
+@keyframes animateHeart {
+    /* scale down and scale up faster in irregular intervals to get the throbbing effect */
+    0% {
+      transform: scale(0.8);
+    }
+    5% {
+      transform: scale(0.9);
+    }
+    10% {
+      transform: scale(0.8);
+    }
+    15% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
